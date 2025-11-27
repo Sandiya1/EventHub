@@ -1,0 +1,12 @@
+fastapi
+uvicorn[standard]
+python-dotenv
+sqlalchemy
+pydantic
+pydantic[email]
+passlib[bcrypt]
+python-jose
+python-multipart
+mysql-connector-python
+sendgrid
+alembic
