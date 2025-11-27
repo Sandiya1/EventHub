@@ -5,7 +5,7 @@ python-dotenv
 sqlalchemy
 pydantic
 pydantic[email]
-passlib[bcrypt]
+passlib
 python-jose
 python-multipart
 mysql-connector-python
