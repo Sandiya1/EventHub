@@ -1,3 +1,4 @@
+
 fastapi
 uvicorn[standard]
 python-dotenv
@@ -10,3 +11,4 @@ python-multipart
 mysql-connector-python
 sendgrid
 alembic
+pydantic-settings
