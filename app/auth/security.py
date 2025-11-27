@@ -9,7 +9,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # password hashing
-pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
+pwd_context = CryptContext(schemes=["pbkdf2_sha256"], deprecated="auto")
+
 
 # token config from .env
 SECRET_KEY = os.getenv("SECRET_KEY", "dev_secret_key")
@@ -37,4 +38,5 @@ def create_access_token(data: Dict[str, Any], expires_delta: Optional[timedelta]
     return token
 
 def decode_access_token(token: str) -> dict:
+
     return jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
